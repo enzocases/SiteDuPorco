@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DuPorco Alimentos</title>
+    <link rel="stylesheet" href="../CSS/style.css">
+</head>
+<body>
+    <header>
+        <img src="../IMGS/LogoDuPorco.png" alt="Logo DuPorco" class="logo">
+        <h1>DuPorco Alimentos</h1>
+    </header>
+
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    <div class="container">
+        <h2>Bem-vindo à DuPorco Alimentos</h2>
+        <p>Qualidade e tradição em produtos suínos.</p>
+    </div>
+
+    <section class="about">
+        <h2 id="sobre">Sobre</h2>
+        <p>A DuPorco Alimentos é uma empresa especializada na produção de alimentos suínos, com qualidade e tradição. Nossos produtos são selecionados e preparados com os melhores ingredientes, garantindo sabor e maciez incomparáveis.</p>
+    </section>
+
+    <section class="products">
+        <h2>Nossos Produtos</h2>
+        <p id="lineOfProducts">Conheça nossa linha completa de produtos suínos, selecionados com qualidade e tradição.</p>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="../IMGS/Linguica.jpg" alt="Linguiça Artesanal">
+                <h3>Linguiça Artesanal</h3>
+                <p>Sabor e qualidade incomparáveis para seu churrasco.</p>
+            </div>
+            <div class="product-item">
+                <img src="../IMGS/background.jpg" alt="Costela Suína">
+                <h3>Costela Suína</h3>
+                <p>Maciez e sabor irresistível para sua refeição.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact">
+        <h2 id="contato">Contato</h2>
+        <p>Entre em contato conosco para fazer seu pedido ou tirar suas dúvidas.</p>
+        <form action="../PHP/enviarEmail.php" method="GET">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required><br>
+        
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+        
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" required></textarea><br>
+        
+            <button type="submit">Enviar</button>
+        </form>
+        
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 DuPorco Alimentos - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
